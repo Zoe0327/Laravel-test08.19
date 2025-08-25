@@ -1,0 +1,40 @@
+.thanks__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1512px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.thanks__heading {
+    font-family: 'Inika', serif;
+    color: #82756A;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.home__button {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.home__button-submit {
+    width: 160px;
+    height: 46px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #82756A;
+    /* ボタン色例 */
+}

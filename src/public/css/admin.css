@@ -1,0 +1,207 @@
+.category__content {
+    width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+}
+
+.category-title {
+    margin-bottom: 40px;
+    text-align: center;
+    color: #8B7969;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.search-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.form-control_keyword {
+    height: 50px;
+    width: 40ch;
+    color: #000;
+    cursor: pointer;
+
+}
+
+.form-control_keyword::placeholder {
+    color: #BEB1A6;
+}
+
+.form-control_gender {
+    height: 50px;
+    width: 12ch;
+    color: #8B7969;
+    cursor: pointer;
+}
+
+.form-control_category {
+    height: 50px;
+    width: 25ch;
+    color: #8B7969;
+    cursor: pointer;
+}
+
+.form-control_date {
+    height: 50px;
+    width: 20ch;
+    color: #8B7969;
+    cursor: pointer;
+}
+
+.form-group input,
+.form-group select {
+    box-sizing: border-box;
+    line-height: 1.2;
+    padding: 0 20px;
+
+    margin-right: 25px;
+    font-size: 16px;
+    border: 1px solid #E3DED9;
+}
+
+.form-group select {
+    appearance: none;
+    /* 標準の矢印を消す */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #FFF url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='%238B7969'><polygon points='0,0 14,0 7,7'/></svg>") no-repeat right 10px center;
+    background-size: 12px;
+    padding-right: 30px;
+    /* 矢印分スペース確保 */
+}
+
+.category__button {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 20ch;
+}
+
+.top-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search-button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #8B7969;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    width: 102px;
+    height: 50px;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.reset-button {
+    padding: 2px 6px;
+    border: none;
+    background-color: #D9C6B5;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    width: 105px;
+    height: 50px;
+    font-size: 16px;
+}
+
+.export-submit {
+    padding: 4px 8px;
+    border: none;
+    background-color: #E1DBD699;
+    color: #8B7969;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.pagination {
+    display: flex;
+    gap: 5px;
+    list-style: none;
+    padding: 0;
+}
+
+.pagination li {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.pagination li a,
+.pagination li span {
+    text-decoration: none;
+    color: #333;
+}
+
+.pagination li.active {
+    background-color: #8B7969;
+    color: #fff;
+    border-color: #8B7969;
+}
+
+.pagination li.disabled span {
+    color: #ccc;
+}
+
+.category__table {
+    width: 1200px;
+    margin: 20px auto;
+    background: #FFF;
+    padding: 20px;
+    border: 1px solid #E0DFDE;
+}
+
+.table-bordered {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+
+.table-bordered thead {
+    background: #8B7969;
+    color: #fff;
+    text-align: left;
+}
+
+.table-bordered thead th {
+    padding-left: 40px;
+}
+
+.table-bordered tbody {
+    color: #8B7969;
+}
+
+.table-bordered thead,
+.table-bordered tbody {
+    height: 50px;
+    border: 1px solid #E0DFDE;
+    padding: 10px 15px;
+}
+
+.table-bordered tbody tr {
+    border: 1px solid #E0DFDE;
+    height: 55px;
+    padding-left: 40px;
+}
+
+.table-bordered tbody td {
+    padding-left: 40px;
+}
+
+.table-bordered tbody a {
+    border: 1px solid #E0DFDE;
+    text-decoration: none;
+    color: #D9C6B5;
+    padding: 5px 15px;
+    font-size: 18px;
+}
