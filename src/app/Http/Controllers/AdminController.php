@@ -16,13 +16,13 @@ class AdminController extends Controller
 
         if ($request->filled('keyword')) {
             //半角スペース・全角スペース・スペースなしに対応する用設定
-            $keyword = str_replace([' ', '　'], '', $request->keyword);
+            $keyword = $request->keyword;
 
-            $query->where(function ($q) use ($keyword, $request) {
-                $q->Where('last_name', 'like', "%{$keyword}%")
+            $query->where(function ($q) use ($keyword) {
+                $q->where(DB::raw('CONCAT(last_name, " ", first_name)'), 'like', "%{$keyword}%")
+                    ->orWhere('last_name', 'like', "%{$keyword}%")
                     ->orWhere('first_name', 'like', "%{$keyword}%")
-                    ->orWhere('email', 'like', "%{$request->keyword}%")
-                    ->orWhere(DB::raw("REPLACE(CONCAT(last_name, first_name), ' ', '')"), 'like', "%{$keyword}%");
+                    ->orWhere('email', 'like', "%{$keyword}%");
             });
         }
         if ($request->filled('gender') && $request->gender !== 'all') {

@@ -9,7 +9,7 @@
     <div class="category-title">
         <h2>Admin</h2>
     </div>
-    <form class="search-form" action="{{ url('/search') }}" method="GET">
+    <form class="search-form" action="{{ url('/admin') }}" method="GET">
         <!-- 名前・メール用の検索ボックス -->
         <div class="form-group">
             <input class="form-control_keyword" type="text" name="keyword" value="{{ request('keyword') }}" placeholder="名前やメールアドレスを入力してください">
